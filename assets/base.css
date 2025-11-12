@@ -1,4 +1,5 @@
 /* Base CSS for Sloe Fit Theme */
+/* Matches the original HTML design with dark theme and electric lime accent */
 
 /* Reset and Base Styles */
 *,
@@ -16,20 +17,23 @@ body {
   margin: 0;
   font-size: 1.5rem;
   line-height: 1.6;
-  color: var(--color-base-text);
-  background-color: var(--color-base-background-1);
-  font-family: var(--font-body-family);
-  font-style: var(--font-body-style);
-  font-weight: var(--font-body-weight);
+  color: #E0E0E0;
+  background-color: #121212;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'cv03', 'cv04', 'cv11';
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  font-family: var(--font-heading-family);
-  font-style: var(--font-heading-style);
-  font-weight: var(--font-heading-weight);
-  line-height: 1.2;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
 }
 
 /* Links */
@@ -46,8 +50,9 @@ a:hover {
 .button {
   display: inline-block;
   padding: 0.75rem 2rem;
-  border-radius: var(--buttons-radius);
+  border-radius: 0.5rem;
   font-weight: 700;
+  font-size: 1.125rem;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s;
@@ -55,16 +60,36 @@ a:hover {
   border: none;
 }
 
+.button--primary {
+  background-color: #C8FF00;
+  color: #121212;
+}
+
+.button--primary:hover {
+  filter: brightness(1.1);
+}
+
+.button--secondary {
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.button--secondary:hover {
+  background-color: #FFFFFF;
+  color: #121212;
+}
+
 /* Layout Utilities */
 .page-width {
-  max-width: var(--page-width);
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 1rem;
   }
 }
 
@@ -90,30 +115,50 @@ a:hover {
   }
 }
 
-/* Color Schemes */
+/* Color Schemes - Matching Original HTML */
+:root {
+  --primary: #C8FF00;
+  --white: #FFFFFF;
+  --dark: #121212;
+  --dark-alt: #1E1E1E;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E0E0E0;
+  --text-muted: #AAAAAA;
+  --dark-text: #121212;
+  
+  /* Shopify Color System */
+  --color-primary: #C8FF00;
+  --color-base-text: #E0E0E0;
+  --color-base-background-1: #121212;
+  --color-base-background-2: #1E1E1E;
+  --color-base-solid-button-labels: #121212;
+  --color-base-accent-1: #C8FF00;
+  --color-base-accent-2: #1E1E1E;
+}
+
 .color-accent-1 {
-  --color-base-text: var(--color-base-accent-1);
-  --color-base-background-1: var(--color-base-accent-1);
+  background-color: var(--primary);
+  color: var(--dark-text);
 }
 
 .color-accent-2 {
-  --color-base-text: var(--color-base-accent-2);
-  --color-base-background-1: var(--color-base-accent-2);
+  background-color: var(--dark-alt);
+  color: var(--text-primary);
 }
 
 .color-background-1 {
-  --color-base-text: var(--color-base-text);
-  --color-base-background-1: var(--color-base-background-1);
+  background-color: var(--dark);
+  color: var(--text-secondary);
 }
 
 .color-background-2 {
-  --color-base-text: var(--color-base-text);
-  --color-base-background-1: var(--color-base-background-2);
+  background-color: var(--dark-alt);
+  color: var(--text-secondary);
 }
 
 .color-inverse {
-  --color-base-text: var(--color-base-background-1);
-  --color-base-background-1: var(--color-base-text);
+  background-color: var(--white);
+  color: var(--dark);
 }
 
 /* Gradient */
