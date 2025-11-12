@@ -1,19 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "hero": {
-      "type": "hero"
+      "type": "hero",
+      "settings": {
+        "heading": "Your Complete Fitness Ecosystem.",
+        "text": "Premium, trusted supplements and a personal AI coach. Stop guessing, start achieving.",
+        "button_label_1": "Shop The Starter Stack",
+        "button_link_1": "shopify://products/creatine-monohydrate",
+        "button_label_2": "Meet The AI Coach",
+        "button_link_2": "",
+        "color_scheme": "background-1"
+      }
     },
     "featured-collection": {
-      "type": "featured-collection"
+      "type": "featured-collection",
+      "settings": {
+        "title": "THE FOUNDATION.",
+        "description": "Start your journey with our core essentials. Transparently sourced, no guesswork involved.",
+        "collection": "",
+        "products_to_show": 3,
+        "color_scheme": "background-1"
+      }
     },
     "how-it-works": {
-      "type": "how-it-works"
+      "type": "how-it-works",
+      "settings": {
+        "title": "A COACH IN YOUR POCKET.",
+        "description": "Sloe Fit is more than supplements. It's a complete system designed to guide you.",
+        "color_scheme": "background-1"
+      }
     },
     "brand-story": {
-      "type": "brand-story"
+      "type": "brand-story",
+      "settings": {
+        "title": "FITNESS YOU CAN TRUST.",
+        "text": "<p>We were tired of confusing labels and mystery ingredients. Sloe Fit was founded on transparency. We provide only the highest-quality, effective supplements, so you know exactly what you're putting in your body.</p>",
+        "button_label": "Our Story",
+        "button_link": "",
+        "color_scheme": "background-1"
+      }
     },
     "newsletter": {
-      "type": "newsletter"
+      "type": "newsletter",
+      "settings": {
+        "title": "JOIN THE LIST.",
+        "text": "Get 10% off your first order and be the first to get access to the Sloe Fit AI Coach.",
+        "button_label": "Sign Up",
+        "color_scheme": "background-1"
+      }
     }
   },
   "order": [
@@ -24,4 +67,3 @@
     "newsletter"
   ]
 }
-

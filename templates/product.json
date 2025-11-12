@@ -1,13 +1,37 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main-product": {
-      "type": "main-product"
+      "type": "main-product",
+      "settings": {
+        "show_bullet_points": true,
+        "bullet_points": "25g Protein Per Serving\nTransparently Sourced\nZero Added Sugar\nMixes Instantly",
+        "color_scheme": "background-1"
+      }
     },
     "product-trust": {
-      "type": "product-trust"
+      "type": "product-trust",
+      "settings": {
+        "title": "Transparently Sourced, No Guesswork.",
+        "color_scheme": "background-1"
+      }
     },
     "product-recommendations": {
-      "type": "product-recommendations"
+      "type": "product-recommendations",
+      "settings": {
+        "title": "COMPLETE THE STARTER STACK",
+        "collection": "pieces-collection",
+        "products_to_show": 2,
+        "color_scheme": "background-1"
+      }
     }
   },
   "order": [
@@ -16,4 +40,3 @@
     "product-recommendations"
   ]
 }
-
