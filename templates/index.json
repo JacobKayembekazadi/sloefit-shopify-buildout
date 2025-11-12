@@ -17,8 +17,8 @@
         "button_label_1": "Shop The Starter Stack",
         "button_link_1": "shopify://products/creatine-monohydrate",
         "button_label_2": "Meet The AI Coach",
-        "button_link_2": "",
-        "color_scheme": "background-1"
+        "button_link_2": "shopify://products/creatine-monohydrate",
+        "color_scheme": "accent-2"
       }
     },
     "featured-collection": {
@@ -26,7 +26,7 @@
       "settings": {
         "title": "THE FOUNDATION.",
         "description": "Start your journey with our core essentials. Transparently sourced, no guesswork involved.",
-        "collection": "",
+        "collection": "pieces-collection",
         "products_to_show": 3,
         "color_scheme": "background-1"
       }
