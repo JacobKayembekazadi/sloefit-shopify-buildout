@@ -37,18 +37,21 @@
           {%- if product.media.size > 1 -%}
             <div class="main-product__thumbnails">
               {%- for media in product.media limit: 4 -%}
-                <button
-                  type="button"
-                  class="main-product__thumbnail{% if forloop.first %} main-product__thumbnail--active{% endif %}"
-                  data-media-id="{{ media.id }}"
-                  aria-label="{{ 'products.product.media.load_image' | t: index: forloop.index }}"
+              <button
+                type="button"
+                class="main-product__thumbnail{% if forloop.first %} main-product__thumbnail--active{% endif %}"
+                data-media-id="{{ media.id }}"
+                aria-label="{{ 'products.product.media.load_image' | t: index: forloop.index }}"
+              >
+                <img
+                  src="{{ media | image_url: width: 200 }}"
+                  alt="{{ media.alt | escape }}"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                  class="main-product__thumbnail-image"
                 >
-                  {{ media | image_url: width: 200 | image_tag:
-                    loading: 'lazy',
-                    alt: media.alt | escape,
-                    class: 'main-product__thumbnail-image'
-                  }}
-                </button>
+              </button>
               {%- endfor -%}
             </div>
           {%- endif -%}
