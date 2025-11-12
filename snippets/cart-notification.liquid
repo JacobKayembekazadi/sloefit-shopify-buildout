@@ -1,0 +1,61 @@
+<cart-notification>
+  <div class="cart-notification-wrapper page-width{% if cart == empty %} is-empty{% endif %}">
+    <div class="cart-notification color-{{ color_scheme }} gradient">
+      <div class="cart-notification__header">
+        <h2 class="cart-notification__heading caption-large">{{ 'sections.cart.notification' | t }}</h2>
+      </div>
+      <div id="cart-notification-product" class="cart-notification-product"></div>
+      <div class="cart-notification__links">
+        <a href="{{ routes.cart_url }}" id="cart-notification-button" class="button button--secondary">
+          {{ 'sections.cart.view_cart' | t }}
+        </a>
+        <form action="{{ routes.cart_url }}" method="post" id="cart-notification-form">
+          <button class="button button--primary" name="checkout">
+            {{ 'sections.cart.checkout' | t }}
+          </button>
+        </form>
+        <button type="button" class="cart-notification__close link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+          {% render 'icon-close' %}
+        </button>
+      </div>
+    </div>
+  </div>
+</cart-notification>
+
+<style>
+  .cart-notification-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    pointer-events: none;
+  }
+  .cart-notification {
+    background: var(--color-base-background-1);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    pointer-events: all;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+  }
+  .cart-notification.animate {
+    transform: translateY(0);
+  }
+  .cart-notification__heading {
+    margin: 0 0 1rem;
+    font-weight: 700;
+  }
+  .cart-notification__links {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  .cart-notification__close {
+    margin-left: auto;
+  }
+</style>
+

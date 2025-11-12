@@ -1,0 +1,73 @@
+{
+  "current": {
+    "colors_accent_1": "#C8FF00",
+    "colors_text": "#FFFFFF",
+    "colors_background_1": "#121212",
+    "colors_background_2": "#1E1E1E",
+    "colors_solid_button_labels": "#121212",
+    "colors_outline_button_labels": "#FFFFFF",
+    "colors_accent_2": "#1E1E1E",
+    "type_header_font": "assistant_n4",
+    "type_body_font": "assistant_n4",
+    "heading_scale": 100,
+    "body_scale": 100,
+    "page_width": 1200,
+    "spacing_sections": 0,
+    "spacing_grid_horizontal": 8,
+    "spacing_grid_vertical": 8,
+    "buttons_border_radius": 8,
+    "buttons_border_thickness": 1,
+    "buttons_border_opacity": 100,
+    "buttons_shadow_opacity": 0,
+    "buttons_shadow_horizontal_offset": 0,
+    "buttons_shadow_vertical_offset": 0,
+    "buttons_shadow_blur": 0,
+    "card_corner_radius": 12,
+    "card_text_alignment": "left",
+    "card_image_padding": 0,
+    "card_border_thickness": 0,
+    "card_border_opacity": 0,
+    "card_shadow_opacity": 10,
+    "card_shadow_horizontal_offset": 0,
+    "card_shadow_vertical_offset": 0,
+    "card_shadow_blur": 0,
+    "inputs_border_radius": 8,
+    "inputs_border_thickness": 1,
+    "inputs_border_opacity": 55,
+    "inputs_shadow_opacity": 0,
+    "inputs_shadow_horizontal_offset": 0,
+    "inputs_shadow_vertical_offset": 0,
+    "inputs_shadow_blur": 0,
+    "cart_type": "notification",
+    "cart_notification_color_scheme": "background-1",
+    "predictive_search_enabled": true,
+    "currency_code_enabled": true,
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "message": "THE FUTURE OF FITNESS: Our AI Coach is coming. Sign up for early access.",
+          "link": "",
+          "color_scheme": "accent-1"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo_width": 100,
+          "logo_position": "top-left",
+          "menu": "main-menu",
+          "color_scheme": "background-1"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "color_scheme": "background-2"
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}
+

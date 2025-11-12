@@ -1,0 +1,506 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Sloe Fit",
+    "theme_version": "1.0.0",
+    "theme_author": "Sloe Fit",
+    "theme_documentation_url": "https://github.com/JacobKayembekazadi/sloefit-shopify-buildout",
+    "theme_support_url": "https://github.com/JacobKayembekazadi/sloefit-shopify-buildout/issues"
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Color Scheme"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_1",
+        "default": "#C8FF00",
+        "label": "Primary Accent (Electric Lime)",
+        "info": "Used for buttons, CTAs, and highlights"
+      },
+      {
+        "type": "color",
+        "id": "colors_text",
+        "default": "#FFFFFF",
+        "label": "Text Color"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_1",
+        "default": "#121212",
+        "label": "Background Color (Dark)"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_2",
+        "default": "#1E1E1E",
+        "label": "Background Alt (Dark Alt)"
+      },
+      {
+        "type": "color",
+        "id": "colors_solid_button_labels",
+        "default": "#121212",
+        "label": "Button Text (on Primary Background)"
+      },
+      {
+        "type": "color",
+        "id": "colors_outline_button_labels",
+        "default": "#FFFFFF",
+        "label": "Outline Button Text"
+      },
+      {
+        "type": "color",
+        "id": "colors_accent_2",
+        "default": "#1E1E1E",
+        "label": "Accent 2"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Font Settings"
+      },
+      {
+        "type": "font_picker",
+        "id": "type_header_font",
+        "default": "assistant_n4",
+        "label": "Heading Font",
+        "info": "Used for all headings. Inter Black recommended."
+      },
+      {
+        "type": "font_picker",
+        "id": "type_body_font",
+        "default": "assistant_n4",
+        "label": "Body Font",
+        "info": "Used for body text. Inter Regular recommended."
+      },
+      {
+        "type": "range",
+        "id": "heading_scale",
+        "min": 100,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "label": "Heading Scale",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "body_scale",
+        "min": 100,
+        "max": 150,
+        "step": 5,
+        "unit": "%",
+        "label": "Body Scale",
+        "default": 100
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Page Layout"
+      },
+      {
+        "type": "range",
+        "id": "page_width",
+        "min": 1000,
+        "max": 1600,
+        "step": 100,
+        "default": 1200,
+        "unit": "px",
+        "label": "Page Width"
+      },
+      {
+        "type": "range",
+        "id": "spacing_sections",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Section Spacing",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_horizontal",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 8,
+        "unit": "px",
+        "label": "Grid Horizontal Spacing"
+      },
+      {
+        "type": "range",
+        "id": "spacing_grid_vertical",
+        "min": 4,
+        "max": 40,
+        "step": 4,
+        "default": 8,
+        "unit": "px",
+        "label": "Grid Vertical Spacing"
+      }
+    ]
+  },
+  {
+    "name": "Buttons",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Button Style"
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "label": "Button Border Radius",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "Border Thickness",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "buttons_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Border Opacity",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Shadow Opacity",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Horizontal Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Vertical Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "buttons_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "Shadow Blur",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Product Cards",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Card Style"
+      },
+      {
+        "type": "range",
+        "id": "card_corner_radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "label": "Card Corner Radius",
+        "default": 12
+      },
+      {
+        "type": "select",
+        "id": "card_text_alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left",
+        "label": "Card Text Alignment"
+      },
+      {
+        "type": "range",
+        "id": "card_image_padding",
+        "min": 0,
+        "max": 20,
+        "step": 2,
+        "unit": "px",
+        "label": "Image Padding",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "Border Thickness",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Border Opacity",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Shadow Opacity",
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Horizontal Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Vertical Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "card_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "Shadow Blur",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Inputs",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Input Fields"
+      },
+      {
+        "type": "range",
+        "id": "inputs_border_radius",
+        "min": 0,
+        "max": 40,
+        "step": 2,
+        "unit": "px",
+        "label": "Border Radius",
+        "default": 8
+      },
+      {
+        "type": "range",
+        "id": "inputs_border_thickness",
+        "min": 0,
+        "max": 12,
+        "step": 1,
+        "unit": "px",
+        "label": "Border Thickness",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "inputs_border_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Border Opacity",
+        "default": 55
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "Shadow Opacity",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_horizontal_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Horizontal Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_vertical_offset",
+        "min": -12,
+        "max": 12,
+        "step": 2,
+        "unit": "px",
+        "label": "Shadow Vertical Offset",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "inputs_shadow_blur",
+        "min": 0,
+        "max": 20,
+        "step": 5,
+        "unit": "px",
+        "label": "Shadow Blur",
+        "default": 0
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Cart Settings"
+      },
+      {
+        "type": "select",
+        "id": "cart_type",
+        "options": [
+          {
+            "value": "drawer",
+            "label": "Drawer"
+          },
+          {
+            "value": "page",
+            "label": "Page"
+          },
+          {
+            "value": "notification",
+            "label": "Notification"
+          }
+        ],
+        "default": "notification",
+        "label": "Cart Type"
+      },
+      {
+        "type": "select",
+        "id": "cart_notification_color_scheme",
+        "options": [
+          {
+            "value": "accent-1",
+            "label": "Accent 1"
+          },
+          {
+            "value": "accent-2",
+            "label": "Accent 2"
+          },
+          {
+            "value": "background-1",
+            "label": "Background 1"
+          },
+          {
+            "value": "background-2",
+            "label": "Background 2"
+          }
+        ],
+        "default": "background-1",
+        "label": "Cart Notification Color Scheme"
+      }
+    ]
+  },
+  {
+    "name": "Search",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Search Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "predictive_search_enabled",
+        "default": true,
+        "label": "Enable Predictive Search"
+      }
+    ]
+  },
+  {
+    "name": "Currency",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Currency Format"
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_code_enabled",
+        "default": true,
+        "label": "Show Currency Codes",
+        "info": "Show currency codes like USD, EUR, etc."
+      }
+    ]
+  }
+]
+

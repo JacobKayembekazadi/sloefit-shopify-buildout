@@ -106,22 +106,30 @@ Here's where everything goes and why:
 
 ## 🚀 Getting Started
 
-1. **Upload to Shopify:**
-   - Zip this entire folder
+### Uploading to Shopify
+
+1. **Create a ZIP file:**
+   - **IMPORTANT:** Zip the **contents** of the theme folder, not the folder itself
+   - Select all folders (`layout`, `templates`, `sections`, `snippets`, `assets`, `config`, `locales`)
+   - Right-click → Send to → Compressed (zipped) folder
+   - Or use: `zip -r sloefit-theme.zip layout templates sections snippets assets config locales`
+
+2. **Upload to Shopify:**
    - Go to Shopify Admin → Online Store → Themes
    - Click "Add theme" → "Upload zip file"
+   - Select your ZIP file
 
-2. **Customize Sections:**
+3. **Customize Sections:**
    - Go to Theme Editor
    - Click any section to customize it
    - Settings are explained in each section's schema
 
-3. **Set Up Collections:**
+4. **Set Up Collections:**
    - Create a collection called "The Starter Stack"
    - Add your products to it
    - The featured collection section will automatically display them
 
-4. **Configure Menus:**
+5. **Configure Menus:**
    - Go to Navigation in Shopify admin
    - Create menus for: Shop, Company, Support
    - Assign them in the Header and Footer sections
